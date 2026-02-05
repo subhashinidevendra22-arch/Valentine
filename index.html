@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For You 💕</title>
+
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: white;
+    width: 420px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+h2 {
+    text-align: center;
+    color: #e91e63;
+    margin-bottom: 15px;
+}
+
+.image-box {
+    width: 100%;
+    height: 220px;
+    border: 2px dashed #e91e63;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #e91e63;
+    font-weight: bold;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-top: 12px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background: #e91e63;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <h2>Just Us 💕</h2>
+
+    <div class="image-box">
+        <img src="us.jpeg">
+    </div>
+
+    <form onsubmit="submitLove(event)">
+
+        <label>When I accept you ❤️</label>
+        <input type="text">
+
+        <label>When was our first kiss 💋</label>
+        <input type="text">
+
+        <label>When is our anniversary 💍</label>
+        <input type="text">
+
+        <label>Some particular moment that always stays in your heart 💖</label>
+        <textarea rows="3"></textarea>
+
+        <label>I am your ________ 💞</label>
+        <input type="text">
+
+        <label>
+        Nege ena epome solluviga first time na sollure en kattikuriya
+        </label>
+        <textarea rows="3"></textarea>
+
+        <button type="submit">Submit 💕</button>
+
+    </form>
+
+</div>
+
+<script>
+function submitLove(e) {
+    e.preventDefault();
+    alert("Your love is submitted 💕");
+}
+</script>
+
+</body>
+</html>
